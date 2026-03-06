@@ -68,10 +68,12 @@ class Admin extends BaseController
     public function dashboard()
     {
         $subscriberModel = new \App\Models\SubscriberModel();
+        $contactModel = new \App\Models\ContactModel();
 
         $data = [
             'title' => 'Dashboard',
-            'subscriberCount' => $subscriberModel->countAllResults()
+            'subscriberCount' => $subscriberModel->countAllResults(),
+            'contactCount' => $contactModel->countAllResults()
         ];
         return view('admin/dashboard', $data);
     }

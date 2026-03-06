@@ -180,6 +180,9 @@
                     <a class="<?= url_is('admin/subscribers') ? 'active' : '' ?>" href="<?= base_url('admin/subscribers') ?>">
                         <i class="bi bi-envelope-paper-fill"></i> Subscribers
                     </a>
+                    <a class="<?= url_is('admin/contacts') ? 'active' : '' ?>" href="<?= base_url('admin/contacts') ?>">
+                        <i class="bi bi-chat-square-text-fill"></i> Messages
+                    </a>
 
                     <p class="px-4 mt-4 text-uppercase small" style="color: #6c757d; font-weight: 700; letter-spacing: 0.5px; font-size: 0.75rem; margin-bottom: 5px;">Account</p>
                     <a class="text-danger" href="<?= base_url('admin/logout') ?>">

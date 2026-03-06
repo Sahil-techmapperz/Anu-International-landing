@@ -23,6 +23,27 @@
             </div>
         </div>
     </div>
+
+    <div class="col-md-6 col-xl-4 mb-4">
+        <div class="card h-100" style="border-left: 5px solid #10243E;">
+            <div class="card-body d-flex flex-column align-items-start justify-content-center p-4">
+                <div class="d-flex align-items-center justify-content-between w-100 mb-3">
+                    <h5 class="text-muted fw-bold text-uppercase mb-0" style="font-size: 0.85rem; letter-spacing: 0.5px;">Total Messages</h5>
+                    <div class="icon-box" style="background: rgba(16, 36, 62, 0.1); color: #10243E; width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+                        <i class="bi bi-chat-square-text-fill"></i>
+                    </div>
+                </div>
+                <h2 class="display-5 fw-bold text-dark mb-0">
+                    <?= esc($contactCount ?? 0) ?>
+                </h2>
+            </div>
+            <div class="card-footer bg-transparent border-top" style="padding: 12px 20px;">
+                <a href="<?= base_url('admin/contacts') ?>" class="text-decoration-none fw-semibold" style="color: #10243E; font-size: 0.9rem;">
+                    Manage Messages <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="row">

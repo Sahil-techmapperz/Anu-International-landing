@@ -16,7 +16,10 @@ $routes->group('admin', ['filter' => 'adminauth'], static function ($routes) {
     $routes->get('dashboard', 'Admin::dashboard');
     $routes->get('subscribers', 'Newsletter::subscribers');
     $routes->post('subscribers/delete/(:num)', 'Newsletter::delete/$1');
+    $routes->get('contacts', 'Contact::index');
+    $routes->post('contacts/delete/(:num)', 'Contact::delete/$1');
 });
 
 // API Routes
 $routes->post('api/newsletter/subscribe', 'Newsletter::subscribe');
+$routes->post('api/contact/submit', 'Contact::submit');

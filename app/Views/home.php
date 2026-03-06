@@ -479,6 +479,68 @@
 </section>
 
 <!-- ============================================================
+     CONTACT US SECTION
+     ============================================================ -->
+<section class="contact" id="contact">
+    <div class="contact__container">
+        <!-- Left Side: Information -->
+        <div class="contact__info">
+            <h2>Get In Touch</h2>
+            <p class="contact__desc">
+                We'd love to hear from you. Whether you have a question about our packaging solutions, pricing, need a consultation, or anything else, our team is ready to answer all your questions.
+            </p>
+
+            <div class="contact__details">
+                <div class="contact__item">
+                    <div class="contact__icon"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div class="contact__text">
+                        <strong>Address</strong>
+                        <p>388 HSIIDC Kundli Sector-S3 Phase - 3<br>Kundli, Sonipat Haryana, India</p>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__icon"><i class="bi bi-telephone-fill"></i></div>
+                    <div class="contact__text">
+                        <strong>Phone</strong>
+                        <p><a href="tel:+919891273636">+91-9891273636</a></p>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <div class="contact__icon"><i class="bi bi-envelope-fill"></i></div>
+                    <div class="contact__text">
+                        <strong>Email</strong>
+                        <p><a href="mailto:Anuinternational27@gmail.com">Anuinternational27@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Form -->
+        <div class="contact__form-wrap">
+            <h3 class="contact__form-title">Send us a Message</h3>
+            <form class="contact__form" id="contactForm" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="contactName" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="contactSubject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="contactMessage" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="contact__submit-btn" id="contactSubmitBtn">Send Message</button>
+            </form>
+            <div id="contactFormMessage" class="mt-3 text-center" style="font-weight: 600; font-size: 0.95rem;"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
      NEWSLETTER STRIP
      ============================================================ -->
 <section class="newsletter">
@@ -597,6 +659,47 @@
         } catch (err) {
             msgDiv.textContent = 'A network error occurred. Please try again.';
             msgDiv.style.color = '#ffcccc';
+        }
+    }
+
+    async function handleContactSubmit(e) {
+        e.preventDefault();
+        const form = document.getElementById('contactForm');
+        const msgDiv = document.getElementById('contactFormMessage');
+        const submitBtn = document.getElementById('contactSubmitBtn');
+        const originalBtnText = submitBtn.textContent;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        msgDiv.textContent = '';
+
+        try {
+            const formData = new FormData(form);
+
+            const response = await fetch('<?= base_url('api/contact/submit') ?>', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                msgDiv.textContent = result.message;
+                msgDiv.style.color = '#198754'; // Bootstrap success green
+                form.reset(); // clear form
+            } else {
+                msgDiv.textContent = result.message;
+                msgDiv.style.color = '#dc3545'; // Bootstrap danger red
+            }
+        } catch (err) {
+            msgDiv.textContent = 'A network error occurred. Please try again.';
+            msgDiv.style.color = '#dc3545';
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
         }
     }
 </script>
