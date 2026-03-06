@@ -7,7 +7,7 @@
   <title><?= $title ?? 'Anu International' ?></title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="<?= base_url('favicon.ico') ?>" />
+  <link rel="icon" type="image/png" href="<?= base_url('images/logo.png') ?>" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="<?= base_url('css/style.css') ?>" />

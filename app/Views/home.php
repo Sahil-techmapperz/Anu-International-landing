@@ -19,7 +19,7 @@
                 </svg>
                 +91-9891273636
             </a>
-            <a href="mailto:anuinternational27@gmail.com">
+            <a href="mailto:anuinternational27@gmail.com" class="email-link">
                 <!-- Mail icon -->
                 <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
@@ -38,13 +38,7 @@
 
         <!-- Logo -->
         <a href="<?= base_url('/') ?>" class="navbar__logo" aria-label="Anu International Home">
-            <!-- Skeleton placeholder for logo -->
-            <div class="skeleton-logo" id="logo-skeleton" aria-hidden="true"></div>
-            <!-- Real logo SVG (hidden until loaded, swap with real img if available) -->
-            <div class="navbar__logo-text">
-                <span class="name">ANU</span>
-                <span class="tagline">International</span>
-            </div>
+            <img src="<?= base_url('images/logo.png') ?>" alt="Anu International" class="navbar__logo-img">
         </a>
 
         <!-- Hamburger -->
@@ -292,5 +286,319 @@
 
     </div>
 </section>
+
+<!-- ============================================================
+     SPECIALIZED OFFERING SECTION
+     ============================================================ -->
+<section class="specialized" id="specialized">
+    <div class="specialized__header">
+        <h2>Specialized Offering</h2>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+    </div>
+
+    <div class="spec-grid">
+        <!-- ROW 1: 4 normal items -->
+
+        <!-- Item 1: Pouches (with label) -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_pouches.png') ?>" alt="Pouches" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Pouches</div>
+        </div>
+
+        <!-- Item 2: Clear Bags -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_clearbags.png') ?>" alt="Clear Bags" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Clear Bags</div>
+        </div>
+
+        <!-- Item 3: Strapping Roll -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_strapping.png') ?>" alt="Strapping Roll" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Strapping Roll</div>
+        </div>
+
+        <!-- Item 4: Blue Foam Roll -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_foam.png') ?>" alt="Foam Roll" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Foam Roll</div>
+        </div>
+
+        <!-- ROW 2: 4 normal items -->
+
+        <!-- Item 5: Cardboard Boxes -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_boxes.png') ?>" alt="Cardboard Boxes" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Cardboard Boxes</div>
+        </div>
+
+        <!-- Item 6: Gift Box -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_giftbox.png') ?>" alt="Gift Box" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Gift Box</div>
+        </div>
+
+        <!-- Item 7: Colorful Bags -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_colorbags.png') ?>" alt="Colorful Bags" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Colorful Bags</div>
+        </div>
+
+        <!-- Item 8: Jute Bags -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_jutebag.png') ?>" alt="Jute Bags" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Jute Bags</div>
+        </div>
+
+        <!-- ROW 3: Workshop | Tape | Workers (wide) -->
+
+        <!-- Item 9: Workshop / Industrial tubes -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_workshop.png') ?>" alt="Workshop Packaging" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Industrial Packaging</div>
+        </div>
+
+        <!-- Item 10: Tape Rolls -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_tape.png') ?>" alt="Tape Rolls" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Tape Rolls</div>
+        </div>
+
+        <!-- Item 11: Factory Workers (WIDE — spans 2 columns) -->
+        <div class="spec-item spec-wide">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_workers.png') ?>" alt="Factory Workers" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Factory Workers</div>
+        </div>
+
+        <!-- ROW 4: Bubble Wrap (wide) | Label Roll | Silica Gel -->
+
+        <!-- Item 12: Bubble Wrap (WIDE — spans 2 columns) -->
+        <div class="spec-item spec-wide">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_bubblewrap.png') ?>" alt="Bubble Wrap Packing" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Bubble Wrap</div>
+        </div>
+
+        <!-- Item 13: Label Roll -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_labelroll.png') ?>" alt="Label Roll" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Label Roll</div>
+        </div>
+
+        <!-- Item 14: Silica Gel -->
+        <div class="spec-item">
+            <div class="skeleton-spec"></div>
+            <img src="<?= base_url('images/spec_silica.png') ?>" alt="Silica Gel" style="opacity:0;" onload="this.style.opacity='1'; this.previousElementSibling.style.display='none';">
+            <div class="spec-item__label">Silica Gel</div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US SECTION
+     ============================================================ -->
+<section class="why" id="why-choose-us">
+
+    <!-- TOP: two-column layout -->
+    <div class="why__top">
+
+        <!-- Left: text -->
+        <div class="why__text">
+            <span class="why__eyebrow">Anu International</span>
+            <h2 class="why__heading">Why Choose Us ?</h2>
+            <ul class="why__list">
+                <li>State-of-the-art Manufacturing.</li>
+                <li>Custom Design-to-Delivery Services.</li>
+                <li>In house testing &amp; QC.</li>
+                <li>High Speed Turnaround.</li>
+                <li>Export Capability.</li>
+                <li>Competitive Pricing.</li>
+                <li>Experienced Teams.</li>
+            </ul>
+        </div>
+
+        <!-- Right: machine image -->
+        <div class="why__img-wrap">
+            <img
+                src="<?= base_url('images/why_machine.png') ?>"
+                alt="Anu International manufacturing machine"
+                style="opacity:0; transition: opacity 0.6s ease;"
+                onload="this.style.opacity='1';">
+        </div>
+    </div>
+
+    <!-- BOTTOM: full-width worker banner -->
+    <div class="why__banner">
+        <img
+            src="<?= base_url('images/why_worker.png') ?>"
+            alt="Factory worker handling packaging material"
+            style="opacity:0; transition: opacity 0.6s ease;"
+            onload="this.style.opacity='1';">
+    </div>
+
+</section>
+
+<!-- ============================================================
+     OUR PARTNERS SECTION
+     ============================================================ -->
+<section class="partners" id="partners">
+    <div class="partners__header">
+        <h2>Our Partners</h2>
+    </div>
+    <div class="partners__track-wrap">
+        <!-- Duplicated list for infinite scroll illusion -->
+        <div class="partners__track">
+            <div class="partner-logo">Partner 1</div>
+            <div class="partner-logo">Partner 2</div>
+            <div class="partner-logo">Partner 3</div>
+            <div class="partner-logo">Partner 4</div>
+            <div class="partner-logo">Partner 5</div>
+            <div class="partner-logo">Partner 6</div>
+            <div class="partner-logo">Partner 7</div>
+            <!-- Duplicated for loop -->
+            <div class="partner-logo">Partner 1</div>
+            <div class="partner-logo">Partner 2</div>
+            <div class="partner-logo">Partner 3</div>
+            <div class="partner-logo">Partner 4</div>
+            <div class="partner-logo">Partner 5</div>
+            <div class="partner-logo">Partner 6</div>
+            <div class="partner-logo">Partner 7</div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     NEWSLETTER STRIP
+     ============================================================ -->
+<section class="newsletter">
+    <div class="newsletter__inner">
+        <p class="newsletter__title">Stay Update with our New letter</p>
+        <form class="newsletter__form" id="newsletterForm" onsubmit="handleNewsletterSubmit(event)">
+            <input class="newsletter__input" type="email" id="newsletterEmail" name="email" placeholder="Email......" required>
+            <button class="newsletter__btn" type="submit">Submit</button>
+        </form>
+        <div id="newsletterMessage" style="width: 100%; text-align: center; margin-top: 10px; font-weight: 600; font-size: 0.9rem;"></div>
+    </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" id="contact">
+    <div class="footer__inner">
+
+        <!-- Col 1: Brand -->
+        <div class="footer__brand">
+            <div class="footer__brand-logo">
+                <img src="<?= base_url('images/logo.png') ?>" alt="Anu International Logo" class="footer__logo-img">
+            </div>
+            <p class="footer__brand-desc">Anu International is a pioneering manufacturer of corrugated boxes based in India, dedicated to delivering sustainable, high-strength, and custom-designed packaging solutions. Our company thrives on the principles of quality, precision, and customer centricity.</p>
+        </div>
+
+        <!-- Col 2: Our Services -->
+        <div class="footer__col">
+            <h4 class="footer__col-title">Our Services</h4>
+            <ul class="footer__links">
+                <li><a href="#">Pharmaceutical</a></li>
+                <li><a href="#">Food &amp; Beverages</a></li>
+                <li><a href="#">Electronics Goods</a></li>
+                <li><a href="#">Auto Components</a></li>
+                <li><a href="#">E-Commerce</a></li>
+                <li><a href="#">Garments &amp; Apparels</a></li>
+                <li><a href="#">Homecare &amp; Consumer Goods</a></li>
+            </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="footer__col">
+            <h4 class="footer__col-title">Quick Links</h4>
+            <ul class="footer__links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#specialized">Specialized Offering</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer__col">
+            <h4 class="footer__col-title">Our Services</h4>
+            <ul class="footer__contact">
+                <li>
+                    <span class="fc-icon">📞</span>
+                    <span>+91-9891273636</span>
+                </li>
+                <li>
+                    <span class="fc-icon">✉️</span>
+                    <span>Anuinternational27@gmail.com</span>
+                </li>
+                <li>
+                    <span class="fc-icon">📍</span>
+                    <span>388 HSIIDC Kundli Sector-S3 Phase - 3 Kundli, Sonipat Haryana, India</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Bottom copyright bar -->
+    <div class="footer__bar">
+        <span>&copy; Copyrights 2026. All Rights Reserved Anu International</span>
+        <span>Developed By - <a href="https://techmapperz.com" target="_blank" rel="noopener">Techmapperz</a></span>
+    </div>
+</footer>
+
+<!-- Newsletter Script -->
+<script>
+    async function handleNewsletterSubmit(e) {
+        e.preventDefault();
+        const emailInput = document.getElementById('newsletterEmail');
+        const msgDiv = document.getElementById('newsletterMessage');
+        const email = emailInput.value;
+
+        msgDiv.textContent = 'Submitting...';
+        msgDiv.style.color = 'white';
+
+        try {
+            const formData = new FormData();
+            formData.append('email', email);
+
+            const response = await fetch('<?= base_url('api/newsletter/subscribe') ?>', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            });
+
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                msgDiv.textContent = result.message;
+                msgDiv.style.color = '#fff';
+                emailInput.value = ''; // clear input
+            } else {
+                msgDiv.textContent = result.message;
+                msgDiv.style.color = '#ffcccc'; // light red error
+            }
+        } catch (err) {
+            msgDiv.textContent = 'A network error occurred. Please try again.';
+            msgDiv.style.color = '#ffcccc';
+        }
+    }
+</script>
 
 <?= $this->endSection() ?>
