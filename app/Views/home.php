@@ -54,7 +54,7 @@
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#industries">Industries</a></li>
-                <li><a href="#offerings">Specialized Offering</a></li>
+                <li><a href="#specialized">Specialized Offering</a></li>
                 <li><a href="#partners">Partners</a></li>
             </ul>
         </div>
